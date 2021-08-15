@@ -11,7 +11,8 @@ choco install anyhotkey
 
 # Clone repo
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/MobTime.keyboardswitching.git C:\Code\MobTime.keyboardswitching
-export MOBTIME_SCRIPT=c:\code\MobTime.keyboardswitching\rotate_{name}.bat
+[System.Environment]::SetEnvironmentVariable('MOBTIME_SCRIPT', 'c:\code\MobTime.keyboardswitching\rotate_{name}.bat', [System.EnvironmentVariableTarget]::User)
+
 # Done
 cls
 echo "Done!"
