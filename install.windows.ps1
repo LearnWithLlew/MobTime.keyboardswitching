@@ -7,7 +7,7 @@
 iwr -useb cin.st | iex
 choco feature enable --name=allowGlobalConfirmation
 
-choco install anyhotkey
+choco install autohotkey
 
 # Clone repo
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/MobTime.keyboardswitching.git C:\Code\MobTime.keyboardswitching
